@@ -43,6 +43,7 @@ if (number > 0) {
 }
 
 
+// switch
 const dayOfTheWeek = 11;
 
 switch (dayOfTheWeek) {
