@@ -63,7 +63,6 @@ switch (dayOfTheWeek) {
 const numbers = [2, 99, 34, 25, 1, 2, -23];
 
 let smallestNumber = Number.MAX_SAFE_INTEGER;
-console.log(smallestNumber);
 let currentIndex = 0;
 
 while (currentIndex < numbers.length) {
@@ -84,3 +83,21 @@ do {
     console.log(num);
 } while (num < n);
 
+
+// for
+
+let times = 10;
+
+for (let i = 0; i < 10; i++) {
+    console.log(`Hello ${i}!`);
+}
+
+let smallestNr = Number.MAX_SAFE_INTEGER;
+
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] < smallestNr) {
+        smallestNr = numbers[i];
+    }
+}
+
+console.log('Cel mai mic numar din lista este: ', smallestNr);
