@@ -128,3 +128,27 @@ const myCar = {
 for (const property in myCar) {
     console.log(`${property} are valoarea ${myCar[property]}`);
 }
+
+// break si continue
+
+const numbers3 = [1, 2, 3, 4, 5, 6];
+const numberToFind = 3;
+let isNumberInArray = false;
+
+for (const num of numbers3) {
+    console.log(num);
+    if (numberToFind === num){
+        isNumberInArray = true;
+        break;
+    }  
+}
+
+console.log(`${numberToFind} este in array: ${isNumberInArray}`);
+
+
+for (const num of numbers3) {
+    if (num % 2 > 0) {
+        continue;
+    }
+    console.log(`numarul ${num} este par iar dublul lui este ${num * 2}`);
+}
